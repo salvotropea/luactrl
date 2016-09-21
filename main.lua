@@ -19,20 +19,23 @@ appVersion = {
 appVersion:printVersion()
 
 --Module laden
-mods = {
+local mods = {
   "epis",
   "app",
   "gui",
 }
 
 local loadMods = function (mods)
+  for _, mod in pairs (mods) do
+    print("loading module: "..mod)
+    local ok, err = pcall(require, mod)
+    if not ok then
+      print("Error loading module: "..mod)
+    else
+      print("Module "..mod.." loaded succsess!")
+    end
+  end
 end
 
-
-local ok, err = pcall(require, "epis")
-
-if not ok then
-  print(err)
-end
-
+loadMods(mods)
 
