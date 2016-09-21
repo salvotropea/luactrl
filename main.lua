@@ -18,5 +18,21 @@ appVersion = {
 
 appVersion:printVersion()
 
-print("hallo welt")
+--Module laden
+mods = {
+  "epis",
+  "app",
+  "gui",
+}
+
+local loadMods = function (mods)
+end
+
+
+local ok, err = pcall(require, "epis")
+
+if not ok then
+  print(err)
+end
+
 
