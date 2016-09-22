@@ -42,3 +42,11 @@ end
 
 loadMods(mods)
 
+--Globale Funktion zum addieren add
+_add = function (i,j)
+  if type(i) == "number" and type(j) == "number" then
+    return i + j
+  else
+    return nil
+  end
+end
