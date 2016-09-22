@@ -50,6 +50,11 @@ _add = function (i,j)
   end
 end
 
+local one = 1
+local two = 2
+
+print(one.." + "..two.." = ".._add(one, two))
+
 --Globale Funktion zum subtrahieren sub
 _sub = function (i,j)
   if type(i) == "number" and type(j) == "number" then
