@@ -49,3 +49,12 @@ _add = function (i,j)
     return nil
   end
 end
+
+--Globale Funktion zum subtrahieren sub
+_sub = function (i,j)
+  if type(i) == "number" and type(j) == "number" then
+    return i - j
+  else
+    return nil
+  end
+end
