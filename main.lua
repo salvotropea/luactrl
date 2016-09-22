@@ -49,3 +49,8 @@ _add = function (i,j)
     return nil
   end
 end
+
+local one = 1
+local two = 2
+
+print(one.." + "..two.." = ".._add(one, two))
