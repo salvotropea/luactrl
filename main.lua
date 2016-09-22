@@ -9,10 +9,12 @@ appVersion = {
   beta = true,
   
   printVersion = function (self)
-    print("Version: "..self.mv.."."..self.nv.."."..self.rv)
+    local version = self.mv.."."..self.nv.."."..self.rv
     if self.beta then
-      print("Dies ist eine Entwicklungsversion (beta)")
+      version = "beta"..version
     end
+    
+    print("Version: "..version)
   end,
 }
 
