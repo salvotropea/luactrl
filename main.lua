@@ -25,7 +25,6 @@ local mods = {
   "epis",
   "app",
   "gui",
-  "lall",
 }
 
 local loadMods = function (mods)
