@@ -65,3 +65,4 @@ _sub = function (i,j)
 end
 
 --Anfang Test
+local neueFunc = pcall(require, "meineNeueFunc")
